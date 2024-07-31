@@ -24,3 +24,32 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+.main {
+  display: flex;
+  justify-content: center;
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  padding: 32px;
+}
+
+.items {
+  display: flex;
+  justify-content: center;
+  gap: 52px;
+}
+
+.barberry, .chilli, .pepper, .saffron {
+  width: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.text {
+  text-align: center;
+}
