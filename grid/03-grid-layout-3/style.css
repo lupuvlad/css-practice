@@ -89,3 +89,78 @@
   font-size: 13px;
   font-weight: normal;
 }
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 4fr;
+  gap: 4px;
+}
+
+.header {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column: span 2;
+  align-items: center;
+}
+
+.logo {
+  justify-self: start;
+}
+
+/* Reset margin and padding from ul */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu ul{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+li {
+  justify-self: end;
+}
+
+.sidebar {
+  display: grid;
+  grid-column: 1 / 2;
+  grid-row: span 3;
+  gap: 50px;
+}
+
+.photo, .side-content {
+  display: grid;
+  align-items: center;
+}
+
+.nav ul {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.nav ul li {
+  justify-self: center;
+}
+
+.article {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 15px;
+}
+
+.article .card {
+  height: 200px;
+}
+
+.nav, .article {
+  grid-column: 2;
+}
+
+.footer {
+  grid-column: span 2;
+}
+
+
+
